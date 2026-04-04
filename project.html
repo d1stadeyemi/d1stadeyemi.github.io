@@ -1,23 +1,84 @@
-<section>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Selected Projects</h1>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+</nav>
+
+<section class="project-grid">
 
 <div class="card">
-  <h3>RNA-seq Analysis</h3>
-  <p>Differential expression analysis using DESeq2 to identify key genes.</p>
+  <h3>Metagenomics Pipeline (Large-Scale Data Analysis)</h3>
+  <p>
+    Designed and implemented scalable pipelines to process over 1 TB of metagenomic sequencing data 
+    using Python, Bash, and HPC (SLURM).
+  </p>
+  <p>
+    Reconstructed 37 high-quality genomes and identified metabolic pathways 
+    involved in nitrogen, sulfur, and carbon cycling.
+  </p>
 </div>
 
 <div class="card">
-  <h3>Metagenomics Pipeline</h3>
-  <p>Processed >1TB data, reconstructed microbial genomes, functional analysis.</p>
+  <h3>Biosynthetic Gene Cluster Discovery</h3>
+  <p>
+    Identified over 320 biosynthetic gene clusters using antiSMASH and PRISM, 
+    including novel candidates not present in existing databases.
+  </p>
+  <p>
+    This work contributes to the discovery of potential bioactive compounds, 
+    including antibiotic candidates.
+  </p>
+</div>
+
+<div class="card">
+  <h3>Regulatory Genomics (TFBS & Network Analysis)</h3>
+  <p>
+    Performed promoter sequence analysis and motif discovery (MEME Suite) 
+    to identify transcription factor binding patterns.
+  </p>
+  <p>
+    Integrated transcriptomic data to construct gene regulatory networks 
+    and identify key regulatory hubs.
+  </p>
+</div>
+
+<div class="card">
+  <h3>RNA-seq Analysis</h3>
+  <p>
+    Conducted differential expression analysis using DESeq2 and limma 
+    to identify genes associated with biological conditions.
+  </p>
+</div>
+
+<div class="card">
+  <h3>Single-Cell RNA-seq (Cancer Microenvironment)</h3>
+  <p>
+    Analyzed single-cell RNA-seq data to identify cell populations 
+    and characterize tumor microenvironment heterogeneity 
+    using clustering (UMAP, Leiden) and marker gene analysis.
+  </p>
 </div>
 
 <div class="card">
   <h3>Machine Learning in Genomics</h3>
-  <p>Random Forest models for biological prediction tasks.</p>
-</div>
-
-<div class="card">
-  <h3>Single-cell RNA-seq (Cancer)</h3>
-  <p>UMAP clustering and marker gene identification in tumor microenvironment.</p>
+  <p>
+    Applied Random Forest models and feature engineering approaches 
+    to extract predictive signals from biological datasets.
+  </p>
 </div>
 
 </section>
+
+</body>
+</html>
