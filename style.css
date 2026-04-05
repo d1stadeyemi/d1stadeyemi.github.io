@@ -51,8 +51,7 @@ body {
   height: 180px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 20px;
-  border: 2px solid rgba(255,255,255,0.1);
+  filter: brightness(0.9) contrast(1.1);
 }
 
 .left-panel h2 {
