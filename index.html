@@ -33,7 +33,7 @@
 <!-- MAIN LAYOUT -->
 <section class="main-container">
 
-  <!-- LEFT SIDE -->
+  <!-- LEFT PANEL -->
   <div class="left-panel">
     <div class="profile-img-wrap">
       <img src="images/profile.jpg"
@@ -51,31 +51,60 @@
     </div>
   </div>
 
-  <!-- RIGHT SIDE -->
+  <!-- RIGHT PANEL -->
   <div class="right-panel">
-    <h1>About Me</h1>
 
-    <p>
+    <!-- WELCOME -->
+    <h1>Welcome!</h1>
+    <p class="home-intro">
       I am a computational biologist specializing in genomics, machine learning, and multi-omics analysis.
       My work focuses on developing scalable pipelines to extract biological insight from large-scale sequencing datasets,
       with a growing interest in sequence-level predictive modeling.
     </p>
 
-    <ul>
-      <li>Large-scale genomics (&gt;1 TB data, HPC / SLURM)</li>
-      <li>RNA-seq differential expression (DESeq2, limma)</li>
-      <li>Metagenomics and genome reconstruction (MAGs)</li>
-      <li>Biosynthetic gene cluster discovery (antiSMASH)</li>
-      <li>Machine learning in genomics (Random Forest, PyTorch)</li>
-      <li>Single-cell RNA-seq &amp; tumor microenvironment analysis</li>
-    </ul>
-
-    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:24px;">
-      <a class="btn" href="project.html"><i class="fas fa-flask"></i> Projects</a>
-      <a class="btn" href="publications.html" style="background:linear-gradient(90deg,#4ade80,#38bdf8)"><i class="fas fa-book-open"></i> Publications</a>
+    <!-- CORE INTERESTS -->
+    <div class="home-section">
+      <h2 class="home-section-title"><i class="fas fa-dna"></i> Core Interests</h2>
+      <ul class="home-list">
+        <li>Large-scale genomics (&gt;1 TB data, HPC / SLURM)</li>
+        <li>Bulk RNA-seq analysis (DEGs / DESeq2, limma)</li>
+        <li>Single-cell RNA-seq &amp; tumor microenvironment analysis</li>
+        <li>Metagenomics and genome reconstruction (MAGs)</li>
+        <li>Biosynthetic gene cluster discovery (antiSMASH)</li>
+        <li>Machine learning in genomics (Random Forest, PyTorch)</li>
+      </ul>
     </div>
-  </div>
 
+    <!-- COMPUTATIONAL SKILLS -->
+    <div class="home-section">
+      <h2 class="home-section-title"><i class="fas fa-terminal"></i> Computational Skills</h2>
+      <div class="skills-block">
+        <div class="skill-item">
+          <span class="skill-label">Statistical Genomics &amp; Machine Learning</span>
+          <p>Linear models; differential expression analysis (limma, DESeq2); Random Forest; feature engineering; model validation and cross-validation; performance benchmarking; Gene Ontology and pathway enrichment analysis.</p>
+        </div>
+        <div class="skill-item">
+          <span class="skill-label">Programming &amp; Data Infrastructure</span>
+          <p>Python (NumPy, Pandas, Scikit-learn, PyTorch, Biopython); R (tidyverse, DESeq2, ggplot2); Linux/UNIX; Bash scripting; HPC (SLURM); reproducible workflows (Snakemake, Conda, Git).</p>
+        </div>
+        <div class="skill-item">
+          <span class="skill-label">Genomics &amp; Microbiome Data Analysis</span>
+          <p>Shotgun metagenomics (Qiime2); RNA-seq; genome assembly and binning (MEGAHIT, MetaBAT); functional annotation (DRAM, Prodigal); sequence alignment (BLAST, Bowtie); taxonomic profiling (GTDB-tk); pathway reconstruction (KEGG, COG).</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- QUICK LINKS -->
+    <div class="home-section">
+      <h2 class="home-section-title"><i class="fas fa-link"></i> Quick Links</h2>
+      <p class="home-intro">Explore my research, projects, publications and conferences below.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:16px;">
+        <a class="btn" href="project.html"><i class="fas fa-flask"></i> Projects</a>
+        <a class="btn" href="publications.html" style="background:linear-gradient(90deg,#4ade80,#38bdf8)"><i class="fas fa-book-open"></i> Publications &amp; Conferences</a>
+      </div>
+    </div>
+
+  </div>
 </section>
 
 <footer>
