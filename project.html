@@ -1,88 +1,96 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Projects</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects | Muhammad Ajagbe</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-<header>
-  <h1>Selected Projects</h1>
-</header>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="project.html">Projects</a>
-  <a href="publications.html">Publications</a>
-  <a href="blog.html">Blogs</a>
+<nav class="navbar">
+  <a class="nav-logo" href="index.html">MA</a>
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="project.html" class="active">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="awards.html">Awards</a>
+    <a href="blog.html">Blog</a>
+  </div>
 </nav>
-  
-<section class="project-grid">
 
-<div class="card">
-  <h3>Metagenomics Pipeline (Large-Scale Data Analysis)</h3>
-  <p>
-    Designed and implemented scalable pipelines to process over 1 TB of metagenomic sequencing data 
-    using Python, Bash, and HPC (SLURM).
-  </p>
-  <p>
-    Reconstructed 37 high-quality genomes and identified metabolic pathways 
-    involved in nitrogen, sulfur, and carbon cycling.
-  </p>
+<div class="page-wrapper">
+  <h1 class="page-title">Selected <span>Projects</span></h1>
+
+  <div class="project-grid">
+
+    <div class="card">
+      <span class="card-tag">Metagenomics</span>
+      <h3>Large-Scale Metagenomics Pipeline</h3>
+      <p>
+        Designed and implemented scalable pipelines to process over 1 TB of metagenomic sequencing data
+        using Python, Bash, and HPC (SLURM). Reconstructed 37 high-quality metagenome-assembled genomes
+        and identified metabolic pathways involved in nitrogen, sulfur, and carbon cycling.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="card-tag">Drug Discovery</span>
+      <h3>Biosynthetic Gene Cluster Discovery</h3>
+      <p>
+        Identified over 320 biosynthetic gene clusters using antiSMASH and PRISM,
+        including novel candidates absent from existing databases. This work contributes to the
+        discovery of potential bioactive compounds, including antibiotic candidates.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="card-tag">Regulatory Genomics</span>
+      <h3>TFBS &amp; Network Analysis</h3>
+      <p>
+        Performed promoter sequence analysis and motif discovery (MEME Suite)
+        to identify transcription factor binding patterns. Integrated transcriptomic data to construct
+        gene regulatory networks and identify key regulatory hubs.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="card-tag">Transcriptomics</span>
+      <h3>RNA-seq Differential Expression</h3>
+      <p>
+        Conducted differential expression analysis using DESeq2 and limma
+        to identify genes associated with biological conditions and disease states.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="card-tag">Single-Cell</span>
+      <h3>scRNA-seq: Cancer Microenvironment</h3>
+      <p>
+        Analyzed single-cell RNA-seq data to identify cell populations and characterize
+        tumor microenvironment heterogeneity using clustering (UMAP, Leiden) and marker gene analysis.
+      </p>
+    </div>
+
+    <div class="card">
+      <span class="card-tag">Machine Learning</span>
+      <h3>ML in Genomics</h3>
+      <p>
+        Applied Random Forest models and feature engineering approaches
+        to extract predictive signals from biological datasets, with ongoing work in PyTorch-based
+        sequence modeling.
+      </p>
+    </div>
+
+  </div>
 </div>
 
-<div class="card">
-  <h3>Biosynthetic Gene Cluster Discovery</h3>
-  <p>
-    Identified over 320 biosynthetic gene clusters using antiSMASH and PRISM, 
-    including novel candidates not present in existing databases.
-  </p>
-  <p>
-    This work contributes to the discovery of potential bioactive compounds, 
-    including antibiotic candidates.
-  </p>
-</div>
-
-<div class="card">
-  <h3>Regulatory Genomics (TFBS & Network Analysis)</h3>
-  <p>
-    Performed promoter sequence analysis and motif discovery (MEME Suite) 
-    to identify transcription factor binding patterns.
-  </p>
-  <p>
-    Integrated transcriptomic data to construct gene regulatory networks 
-    and identify key regulatory hubs.
-  </p>
-</div>
-
-<div class="card">
-  <h3>RNA-seq Analysis</h3>
-  <p>
-    Conducted differential expression analysis using DESeq2 and limma 
-    to identify genes associated with biological conditions.
-  </p>
-</div>
-
-<div class="card">
-  <h3>Single-Cell RNA-seq (Cancer Microenvironment)</h3>
-  <p>
-    Analyzed single-cell RNA-seq data to identify cell populations 
-    and characterize tumor microenvironment heterogeneity 
-    using clustering (UMAP, Leiden) and marker gene analysis.
-  </p>
-</div>
-
-<div class="card">
-  <h3>Machine Learning in Genomics</h3>
-  <p>
-    Applied Random Forest models and feature engineering approaches 
-    to extract predictive signals from biological datasets.
-  </p>
-</div>
-
-</section>
+<footer>
+  &copy; 2025 Muhammad Ajagbe &mdash;
+  <a href="mailto:d1stadeyemi@gmail.com">d1stadeyemi@gmail.com</a>
+</footer>
 
 </body>
 </html>
