@@ -1,71 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muhammad Ajagbe | Computational Genomics</title>
   <link rel="stylesheet" href="style.css">
-
-  <!-- ICONS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
 <!-- NAVBAR -->
 <nav class="navbar">
+  <a class="nav-logo" href="index.html">MA</a>
   <div class="nav-right">
-    <a href="index.html">Home</a>
+    <a href="index.html" class="active">Home</a>
     <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
+    <a href="project.html">Projects</a>
     <a href="publications.html">Publications</a>
-    <a href="awards.html">Awards & Certifications</a>
+    <a href="awards.html">Awards</a>
     <a href="blog.html">Blog</a>
   </div>
 </nav>
 
 <!-- MAIN LAYOUT -->
 <section class="main-container">
-
   <!-- LEFT SIDE -->
   <div class="left-panel">
-
-    <img src="https://github.com/d1stadeyemi/d1stadeyemi.github.io/blob/main/images/mrfawdi-dna-10151158_1920.jpg" class="profile-img">
-
+    <div class="profile-img-wrap">
+      <img src="images/profile.jpg" 
+           onerror="this.src='https://ui-avatars.com/api/?name=Muhammad+Ajagbe&background=0f172a&color=38bdf8&size=200'"
+           class="profile-img" alt="Muhammad Ajagbe">
+    </div>
     <h2>Muhammad Ajagbe</h2>
     <p class="role">Computational Biologist</p>
-
+    <p class="affiliation">PhD Student · Genomic Science &amp; Technology<br>University of Tennessee, Knoxville</p>
+    <div class="divider"></div>
     <div class="social-icons">
-      <a href="mailto:d1stadeyemi@gmail.com"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/d1stadeyemi" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/muhammadajagbe" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mailto:d1stadeyemi@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/d1stadeyemi" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/muhammadajagbe" target="_blank" rel="noopener" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
     </div>
-
   </div>
 
   <!-- RIGHT SIDE -->
   <div class="right-panel">
-
     <h1>About Me</h1>
 
     <div class="card">
       <p>
-        I am a computational biologist specializing in genomics, machine learning, and multi-omics analysis. 
-        My work focuses on developing scalable pipelines to extract biological insight from large-scale datasets.
+        I am a computational biologist specializing in genomics, machine learning, and multi-omics analysis.
+        My work focuses on developing scalable pipelines to extract biological insight from large-scale sequencing datasets,
+        with a growing interest in sequence-level predictive modeling.
       </p>
     </div>
 
     <div class="card">
       <h3>Core Expertise</h3>
       <ul>
-        <li>Large-scale genomics (>1TB, HPC/SLURM)</li>
-        <li>RNA-seq analysis (DESeq2, limma)</li>
-        <li>Metagenomics and genome reconstruction</li>
-        <li>Machine learning (Random Forest, PyTorch)</li>
+        <li>Large-scale genomics (&gt;1 TB data, HPC / SLURM)</li>
+        <li>RNA-seq differential expression (DESeq2, limma)</li>
+        <li>Metagenomics and genome reconstruction (MAGs)</li>
+        <li>Biosynthetic gene cluster discovery (antiSMASH)</li>
+        <li>Machine learning in genomics (Random Forest, PyTorch)</li>
+        <li>Single-cell RNA-seq &amp; tumor microenvironment analysis</li>
       </ul>
     </div>
 
+    <div class="card">
+      <h3>Quick Links</h3>
+      <p>Explore my research, publications, and ongoing projects below.</p>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px;">
+        <a class="btn" href="project.html"><i class="fas fa-flask"></i> Projects</a>
+        <a class="btn" href="publications.html" style="background:linear-gradient(90deg,#4ade80,#38bdf8)"><i class="fas fa-book-open"></i> Publications</a>
+      </div>
+    </div>
   </div>
-
 </section>
+
+<footer>
+  &copy; 2025 Muhammad Ajagbe &mdash; Built with GitHub Pages &middot; 
+  <a href="mailto:d1stadeyemi@gmail.com">d1stadeyemi@gmail.com</a>
+</footer>
 
 </body>
 </html>
