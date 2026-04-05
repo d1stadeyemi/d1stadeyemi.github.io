@@ -608,3 +608,22 @@ footer a {
   .hero-banner { height: 160px; }
   .hero-tagline { font-size: 0.78rem; }
 }
+
+/* ===== RIGHT PANEL BARE CONTENT (index.html no-card layout) ===== */
+.right-panel > p {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  margin-bottom: 20px;
+  line-height: 1.75;
+}
+
+.right-panel > ul {
+  padding-left: 20px;
+  margin-bottom: 8px;
+}
+
+.right-panel > ul li {
+  font-size: 1.05rem;
+  color: var(--text-body);
+  margin-bottom: 10px;
+}
