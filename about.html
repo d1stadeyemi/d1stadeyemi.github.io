@@ -1,69 +1,75 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>About</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Muhammad Ajagbe</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
 
-<header>
-  <h1>About Me</h1>
-</header>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="project.html">Projects</a>
-  <a href="publications.html">Publications</a>
-  <a href="blog.html">Blogs</a>
+<nav class="navbar">
+  <a class="nav-logo" href="index.html">MA</a>
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="project.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="awards.html">Awards</a>
+    <a href="blog.html">Blog</a>
+  </div>
 </nav>
 
-<section>
+<div class="page-wrapper">
+  <h1 class="page-title">About <span>Me</span></h1>
 
-<div class="card">
-  <h2>Background</h2>
-  <p>
-    I am a PhD student in Genomic Science and Technology at the University of Tennessee, Knoxville, 
-    with a background spanning biotechnology, regulatory genomics, and large-scale metagenomics.
-  </p>
+  <div class="card">
+    <h2>Background</h2>
+    <p>
+      I am a PhD student in Genomic Science and Technology at the University of Tennessee, Knoxville,
+      with a background spanning biotechnology, regulatory genomics, and large-scale metagenomics.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Research Experience</h2>
+    <p>
+      My work focuses on extracting biological structure from high-dimensional sequencing data.
+      During my MSc at the American University in Cairo, I developed computational pipelines to process
+      over 1 TB of metagenomic data, reconstructing 37 metagenome-assembled genomes and identifying
+      biosynthetic gene clusters with potential biomedical applications.
+    </p>
+    <p>
+      In regulatory genomics, I performed sequence-based analysis of promoter regions to identify
+      transcription factor binding patterns, integrating motif discovery with transcriptomic data
+      to construct gene regulatory networks.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Current Direction</h2>
+    <p>
+      My current research interest lies in transitioning from descriptive genomics to predictive modeling.
+      I am particularly interested in how sequence-level patterns can be encoded into machine learning models
+      to predict functional outcomes — including gene regulation and phenotype.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Technical Approach</h2>
+    <p>
+      I work primarily in Python and R, using high-performance computing environments (SLURM)
+      to handle large datasets. My workflows emphasize reproducibility, scalability, and integration
+      across multiple data types — including sequence, expression, and functional annotations.
+    </p>
+  </div>
 </div>
 
-<div class="card">
-  <h2>Research Experience</h2>
-  <p>
-    My work has focused on extracting biological structure from high-dimensional sequencing data. 
-    During my MSc at the American University in Cairo, I developed computational pipelines to process 
-    over 1 TB of metagenomic data, reconstructing 37 metagenome-assembled genomes and identifying 
-    biosynthetic gene clusters with potential biomedical applications.
-  </p>
-
-  <p>
-    In regulatory genomics, I performed sequence-based analysis of promoter regions to identify 
-    transcription factor binding patterns, integrating motif discovery with transcriptomic data 
-    to construct gene regulatory networks.
-  </p>
-</div>
-
-<div class="card">
-  <h2>Current Direction</h2>
-  <p>
-    My current research interest lies in transitioning from descriptive genomics to predictive modeling. 
-    I am particularly interested in how sequence-level patterns can be encoded into machine learning models 
-    to predict functional outcomes, including gene regulation and phenotype.
-  </p>
-</div>
-
-<div class="card">
-  <h2>Technical Approach</h2>
-  <p>
-    I work primarily in Python and R, using high-performance computing environments (SLURM) 
-    to handle large datasets. My workflows emphasize reproducibility, scalability, and integration 
-    across multiple data types including sequence, expression, and functional annotations.
-  </p>
-</div>
-
-</section>
+<footer>
+  &copy; 2025 Muhammad Ajagbe &mdash;
+  <a href="mailto:d1stadeyemi@gmail.com">d1stadeyemi@gmail.com</a>
+</footer>
 
 </body>
 </html>
