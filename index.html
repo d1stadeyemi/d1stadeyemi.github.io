@@ -3,24 +3,55 @@
 <head>
   <title>Muhammad Ajagbe | Computational Genomics</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
 
-<header>
-  <h1>Muhammad Ajagbe</h1>
-  <h3>Computational Biologist</h3>
-  <p>Genomics • Machine Learning • Multi-omics</p>
-</header>
-
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="project.html">Projects</a>
-  <a href="publications.html">Publications</a>
-  <a href="blog.html">Blogs</a>
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="nav-right">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="publications.html">Publications</a>
+    <a href="awards.html">Awards</a>
+    <a href="blog.html">Blog</a>
+  </div>
 </nav>
 
+<!-- HERO SECTION -->
+<section class="hero">
+
+  <!-- LEFT SIDE -->
+  <div class="hero-left">
+
+    <h1>Muhammad Ajagbe</h1>
+    <h3>Computational Biologist</h3>
+
+    <p class="tagline">
+      Genomics • Machine Learning • Multi-omics
+    </p>
+
+    <!-- CONTACT ICONS -->
+    <div class="social-icons">
+      <a href="mailto:majagbe@vols.utk.edu"><i class="fas fa-envelope"></i></a>
+      <a href="https://github.com/d1stadeyemi" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE (YOUR IMAGE) -->
+  <div class="hero-right">
+    <img src="profile.jpg" alt="Muhammad Ajagbe">
+  </div>
+
+</section>
+
+<!-- MAIN CONTENT -->
 <section>
 
 <div class="card">
@@ -36,23 +67,14 @@
   <h3>Core Expertise</h3>
   <ul>
     <li>Large-scale genomic data processing (>1TB, HPC/SLURM)</li>
-    <li>RNA-seq and differential expression analysis (DESeq2, limma)</li>
-    <li>Genome-resolved metagenomics and functional annotation</li>
-    <li>Machine learning for biological systems (Random Forest, PyTorch)</li>
-    <li>Reproducible workflows (Snakemake, Conda, Git)</li>
+    <li>RNA-seq (DESeq2, limma)</li>
+    <li>Genome-resolved metagenomics</li>
+    <li>Machine learning (Random Forest, PyTorch)</li>
+    <li>Reproducible workflows</li>
   </ul>
 </div>
 
-<div class="card">
-  <h3>Current Focus</h3>
-  <p>
-    Transitioning toward predictive modeling in genomics, 
-    including sequence-based learning and integrative multi-omics analysis 
-    for understanding complex biological systems.
-  </p>
-</div>
-
-<a href="project.html" class="btn">View Selected Projects →</a>
+<a href="projects.html" class="btn">View Projects →</a>
 
 </section>
 
