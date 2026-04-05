@@ -65,20 +65,118 @@
     <!-- CORE INTERESTS -->
     <div class="home-section">
       <h2 class="home-section-title"><i class="fas fa-dna"></i> Core Interests</h2>
-      <ul class="home-list">
-        <li>Large-scale genomics (&gt;1 TB data, HPC / SLURM)</li>
-        <li>Bulk RNA-seq analysis (DEGs / DESeq2, limma)</li>
-        <li>Single-cell RNA-seq &amp; tumor microenvironment analysis</li>
-        <li>Metagenomics and genome reconstruction (MAGs)</li>
-        <li>Biosynthetic gene cluster discovery (antiSMASH)</li>
-        <li>Machine learning in genomics (Random Forest, PyTorch)</li>
-      </ul>
+      <div class="interests-grid">
+
+        <div class="interest-card">
+          <div class="interest-circle" style="--c1:#38bdf8;--c2:#0ea5e9;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 8 Q24 16 36 8" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M12 16 Q24 24 36 16" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M12 24 Q24 32 36 24" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <path d="M12 32 Q24 40 36 32" stroke="white" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+              <line x1="16" y1="8" x2="16" y2="32" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+              <line x1="24" y1="8" x2="24" y2="32" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+              <line x1="32" y1="8" x2="32" y2="32" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+              <circle cx="16" cy="8" r="2" fill="white"/>
+              <circle cx="32" cy="8" r="2" fill="white"/>
+              <circle cx="16" cy="32" r="2" fill="white"/>
+              <circle cx="32" cy="32" r="2" fill="white"/>
+            </svg>
+          </div>
+          <span class="interest-label">Large-Scale Genomics</span>
+          <span class="interest-sub">HPC / SLURM · &gt;1 TB</span>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-circle" style="--c1:#a78bfa;--c2:#7c3aed;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="30" width="6" height="12" rx="2" fill="white" opacity="0.9"/>
+              <rect x="18" y="22" width="6" height="20" rx="2" fill="white" opacity="0.9"/>
+              <rect x="28" y="14" width="6" height="28" rx="2" fill="white" opacity="0.9"/>
+              <rect x="38" y="18" width="6" height="24" rx="2" fill="white" opacity="0.9"/>
+              <path d="M11 30 L21 22 L31 14 L41 18" stroke="rgba(255,255,255,0.6)" stroke-width="1.5" stroke-dasharray="3 2" fill="none"/>
+            </svg>
+          </div>
+          <span class="interest-label">Bulk RNA-seq</span>
+          <span class="interest-sub">DESeq2 · limma · DEGs</span>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-circle" style="--c1:#f472b6;--c2:#db2777;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="10" stroke="white" stroke-width="2" fill="none"/>
+              <circle cx="24" cy="24" r="4" fill="white" opacity="0.9"/>
+              <circle cx="10" cy="14" r="3" fill="white" opacity="0.7"/>
+              <circle cx="38" cy="14" r="3" fill="white" opacity="0.7"/>
+              <circle cx="10" cy="34" r="3" fill="white" opacity="0.7"/>
+              <circle cx="38" cy="34" r="3" fill="white" opacity="0.7"/>
+              <circle cx="24" cy="8"  r="2.5" fill="white" opacity="0.6"/>
+              <circle cx="24" cy="40" r="2.5" fill="white" opacity="0.6"/>
+              <line x1="24" y1="14" x2="24" y2="10" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+              <line x1="24" y1="34" x2="24" y2="38" stroke="rgba(255,255,255,0.4)" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="interest-label">Single-Cell RNA-seq</span>
+          <span class="interest-sub">Tumor Microenvironment</span>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-circle" style="--c1:#34d399;--c2:#059669;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <ellipse cx="24" cy="24" rx="16" ry="10" stroke="white" stroke-width="2" fill="none"/>
+              <ellipse cx="24" cy="24" rx="10" ry="6" stroke="white" stroke-width="1.5" fill="rgba(255,255,255,0.08)"/>
+              <ellipse cx="24" cy="24" rx="4"  ry="3"  fill="white" opacity="0.9"/>
+              <path d="M8 24 Q16 18 24 24 Q32 30 40 24" stroke="rgba(255,255,255,0.5)" stroke-width="1" fill="none"/>
+              <circle cx="8"  cy="24" r="2" fill="white" opacity="0.6"/>
+              <circle cx="40" cy="24" r="2" fill="white" opacity="0.6"/>
+            </svg>
+          </div>
+          <span class="interest-label">Metagenomics</span>
+          <span class="interest-sub">MAG Reconstruction</span>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-circle" style="--c1:#fb923c;--c2:#ea580c;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="14" y="10" width="20" height="28" rx="3" stroke="white" stroke-width="2" fill="none"/>
+              <line x1="19" y1="18" x2="29" y2="18" stroke="white" stroke-width="1.5" opacity="0.8"/>
+              <line x1="19" y1="23" x2="29" y2="23" stroke="white" stroke-width="1.5" opacity="0.8"/>
+              <line x1="19" y1="28" x2="25" y2="28" stroke="white" stroke-width="1.5" opacity="0.8"/>
+              <circle cx="34" cy="36" r="6" fill="rgba(255,255,255,0.15)" stroke="white" stroke-width="1.5"/>
+              <line x1="31" y1="36" x2="37" y2="36" stroke="white" stroke-width="1.5"/>
+              <line x1="34" y1="33" x2="34" y2="39" stroke="white" stroke-width="1.5"/>
+            </svg>
+          </div>
+          <span class="interest-label">BGC Discovery</span>
+          <span class="interest-sub">antiSMASH · PRISM</span>
+        </div>
+
+        <div class="interest-card">
+          <div class="interest-circle" style="--c1:#facc15;--c2:#d97706;">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8"  y="28" width="8" height="12" rx="2" fill="white" opacity="0.5"/>
+              <rect x="20" y="20" width="8" height="20" rx="2" fill="white" opacity="0.7"/>
+              <rect x="32" y="12" width="8" height="28" rx="2" fill="white" opacity="0.9"/>
+              <path d="M12 20 C16 12 28 10 36 12" stroke="rgba(255,255,255,0.7)" stroke-width="2" stroke-linecap="round" fill="none"/>
+              <circle cx="12" cy="20" r="2.5" fill="white"/>
+              <circle cx="36" cy="12" r="2.5" fill="white"/>
+            </svg>
+          </div>
+          <span class="interest-label">Machine Learning</span>
+          <span class="interest-sub">Random Forest · PyTorch</span>
+        </div>
+
+      </div>
     </div>
 
     <!-- COMPUTATIONAL SKILLS -->
     <div class="home-section">
       <h2 class="home-section-title"><i class="fas fa-terminal"></i> Computational Skills</h2>
       <div class="skills-block">
+        <div class="skill-item">
+          <span class="skill-label">Statistical Genomics &amp; Machine Learning</span>
+          <p>Linear models; differential expression analysis (limma, DESeq2); Random Forest; feature engineering; model validation and cross-validation; performance benchmarking; Gene Ontology and pathway enrichment analysis.</p>
+        </div>
         <div class="skill-item">
           <span class="skill-label">Programming &amp; Data Infrastructure</span>
           <div class="prog-logos">
@@ -95,10 +193,6 @@
             <div class="prog-logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg" alt="Conda"><span>Conda</span></div>
             <div class="prog-logo-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"><span>VS Code</span></div>
           </div>
-        </div>
-                <div class="skill-item">
-          <span class="skill-label">Statistical Genomics &amp; Machine Learning</span>
-          <p>Linear models; differential expression analysis (limma, DESeq2); Random Forest; feature engineering; model validation and cross-validation; performance benchmarking; Gene Ontology and pathway enrichment analysis.</p>
         </div>
         <div class="skill-item">
           <span class="skill-label">Genomics &amp; Microbiome Data Analysis</span>
