@@ -21,83 +21,182 @@
   </div>
 </nav>
 
-<!-- HERO BANNER -->
-<div class="hero-banner">
-  <img src="images/imgmidi-genetics-9659515.png" alt="DNA illustration" class="hero-img">
-  <div class="hero-overlay">
-    <p class="hero-tagline">Decoding Life — One Genome at a Time</p>
-  </div>
-</div>
-
 <div class="page-wrapper">
-  <h1 class="page-title">Selected <span>Projects</span></h1>
+  <h1 class="page-title">Research <span>Projects</span></h1>
+  <p class="projects-intro">
+    End-to-end computational projects spanning metagenomics, transcriptomics, and predictive modeling.
+    Each project is fully reproducible and publicly available on GitHub.
+  </p>
 
-  <div class="project-grid">
-
-    <div class="card">
-      <span class="card-tag">Metagenomics</span>
-      <h3>Large-Scale Metagenomics Pipeline</h3>
-      <p>
-        Designed and implemented scalable pipelines to process over 1 TB of metagenomic sequencing data
-        using Python, Bash, and HPC (SLURM). Reconstructed 37 high-quality metagenome-assembled genomes
-        and identified metabolic pathways involved in nitrogen, sulfur, and carbon cycling.
-      </p>
+  <!-- ══════════════════════════════════════════
+       PROJECT 1 — SIWA METAGENOMICS PIPELINE
+  ══════════════════════════════════════════ -->
+  <div class="proj-card featured">
+    <div class="proj-img-wrap">
+      <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80"
+           alt="Metagenomics pipeline"
+           onerror="this.src='https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&q=80'">
+      <span class="proj-featured-badge"><i class="fas fa-star"></i> Featured</span>
     </div>
-
-    <div class="card">
-      <span class="card-tag">Drug Discovery</span>
-      <h3>Biosynthetic Gene Cluster Discovery</h3>
-      <p>
-        Identified over 320 biosynthetic gene clusters using antiSMASH and PRISM,
-        including novel candidates absent from existing databases. This work contributes to the
-        discovery of potential bioactive compounds, including antibiotic candidates.
+    <div class="proj-body">
+      <div class="proj-tags-row">
+        <span class="proj-tag teal">Metagenomics</span>
+        <span class="proj-tag navy">BGC Discovery</span>
+        <span class="proj-tag green">Drug Discovery</span>
+        <span class="proj-tag orange">HPC · SLURM</span>
+      </div>
+      <h2 class="proj-title">Siwa Oasis Microbiome: End-to-End Metagenomic Pipeline</h2>
+      <p class="proj-subtitle">
+        From raw sequencing reads to biosynthetic gene cluster discovery — a fully automated,
+        three-stage pipeline characterising the microbial communities of Egypt's historically
+        therapeutic Cleopatra and Fatnas springs.
       </p>
-    </div>
 
-    <div class="card">
-      <span class="card-tag">Regulatory Genomics</span>
-      <h3>TFBS &amp; Network Analysis</h3>
-      <p>
-        Performed promoter sequence analysis and motif discovery (MEME Suite)
-        to identify transcription factor binding patterns. Integrated transcriptomic data to construct
-        gene regulatory networks and identify key regulatory hubs.
-      </p>
-    </div>
+      <!-- MINI METRICS -->
+      <div class="proj-metrics">
+        <div class="proj-metric"><span class="pm-val">&gt;1 TB</span><span class="pm-lbl">Data processed</span></div>
+        <div class="proj-metric"><span class="pm-val">37</span><span class="pm-lbl">MAGs reconstructed</span></div>
+        <div class="proj-metric"><span class="pm-val">320+</span><span class="pm-lbl">BGCs identified</span></div>
+        <div class="proj-metric"><span class="pm-val">15</span><span class="pm-lbl">Novel species</span></div>
+      </div>
 
-    <div class="card">
-      <span class="card-tag">Transcriptomics</span>
-      <h3>RNA-seq Differential Expression</h3>
-      <p>
-        Conducted differential expression analysis using DESeq2 and limma
-        to identify genes associated with biological conditions and disease states.
-      </p>
-    </div>
+      <!-- PIPELINE STAGES -->
+      <div class="proj-pipeline">
+        <div class="pipe-step">
+          <div class="pipe-icon" style="background:linear-gradient(135deg,#0891b2,#0f2a5e);">
+            <i class="fas fa-filter"></i>
+          </div>
+          <div>
+            <span class="pipe-label">Stage 1</span>
+            <span class="pipe-name">QC &amp; Profiling</span>
+            <span class="pipe-tools">fastp · Kraken2 · Bracken</span>
+          </div>
+        </div>
+        <div class="pipe-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="pipe-step">
+          <div class="pipe-icon" style="background:linear-gradient(135deg,#059669,#0891b2);">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <div>
+            <span class="pipe-label">Stage 2</span>
+            <span class="pipe-name">Assembly &amp; MAGs</span>
+            <span class="pipe-tools">MEGAHIT · MetaWRAP · GTDB-Tk</span>
+          </div>
+        </div>
+        <div class="pipe-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="pipe-step">
+          <div class="pipe-icon" style="background:linear-gradient(135deg,#d97706,#ea580c);">
+            <i class="fas fa-dna"></i>
+          </div>
+          <div>
+            <span class="pipe-label">Stage 3</span>
+            <span class="pipe-name">BGC Discovery</span>
+            <span class="pipe-tools">antiSMASH · BiG-MAP · DeepBGC</span>
+          </div>
+        </div>
+      </div>
 
-    <div class="card">
-      <span class="card-tag">Single-Cell</span>
-      <h3>scRNA-seq: Cancer Microenvironment</h3>
-      <p>
-        Analyzed single-cell RNA-seq data to identify cell populations and characterize
-        tumor microenvironment heterogeneity using clustering (UMAP, Leiden) and marker gene analysis.
-      </p>
+      <div class="proj-actions">
+        <a class="btn proj-btn" href="https://github.com/d1stadeyemi/BGC_analysis" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+        <a class="btn proj-btn proj-btn-outline" href="publications.html">
+          <i class="fas fa-book-open"></i> Related Publication
+        </a>
+      </div>
     </div>
-
-    <div class="card">
-      <span class="card-tag">Machine Learning</span>
-      <h3>ML in Genomics</h3>
-      <p>
-        Applied Random Forest models and feature engineering approaches
-        to extract predictive signals from biological datasets, with ongoing work in PyTorch-based
-        sequence modeling.
-      </p>
-    </div>
-
   </div>
+
+  <!-- ══════════════════════════════════════════
+       PROJECT 2 — MICROARRAY DEG ANALYSIS
+  ══════════════════════════════════════════ -->
+  <div class="proj-card">
+    <div class="proj-img-wrap proj-img-short">
+      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+           alt="Differential gene expression"
+           onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80'">
+    </div>
+    <div class="proj-body">
+      <div class="proj-tags-row">
+        <span class="proj-tag teal">Transcriptomics</span>
+        <span class="proj-tag navy">Microarray</span>
+        <span class="proj-tag green">R · limma</span>
+      </div>
+      <h2 class="proj-title">Microarray Differential Gene Expression Analysis</h2>
+      <p class="proj-subtitle">
+        Complete DEG workflow on GSE47960 (Mitchell et al., 2013) — from raw microarray data
+        through normalisation and statistical testing to publication-quality visualisation.
+        Fully reproducible with a single command.
+      </p>
+      <div class="proj-outputs">
+        <span class="proj-output-item"><i class="fas fa-chart-bar"></i> Volcano plots</span>
+        <span class="proj-output-item"><i class="fas fa-circle-nodes"></i> Venn diagrams</span>
+        <span class="proj-output-item"><i class="fas fa-table"></i> DEG tables (CSV/TSV)</span>
+        <span class="proj-output-item"><i class="fas fa-chart-line"></i> QC plots</span>
+      </div>
+      <div class="proj-actions">
+        <a class="btn proj-btn" href="https://github.com/d1stadeyemi/Microarray_analysis" target="_blank" rel="noopener">
+          <i class="fab fa-github"></i> View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════
+       IN PROGRESS SECTION
+  ══════════════════════════════════════════ -->
+  <div class="proj-inprogress-section">
+    <h2 class="proj-section-heading"><i class="fas fa-code-branch"></i> In Progress</h2>
+    <div class="proj-inprogress-grid">
+
+      <div class="proj-ip-card">
+        <div class="proj-ip-img">
+          <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&q=80"
+               alt="Single cell RNA-seq"
+               onerror="this.parentElement.style.background='var(--teal-light)'">
+          <div class="proj-ip-overlay">
+            <span class="proj-ip-badge"><i class="fas fa-spinner fa-spin"></i> In Progress</span>
+          </div>
+        </div>
+        <div class="proj-ip-body">
+          <div class="proj-tags-row">
+            <span class="proj-tag teal">scRNA-seq</span>
+            <span class="proj-tag navy">Cancer Biology</span>
+          </div>
+          <h3>Reproducing scRNA-seq Analysis of Tumor Microenvironment</h3>
+          <p>Reproducing a published single-cell RNA-seq study — building hands-on expertise in
+             cell clustering, UMAP, and tumor microenvironment characterisation.</p>
+        </div>
+      </div>
+
+      <div class="proj-ip-card">
+        <div class="proj-ip-img">
+          <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&q=80"
+               alt="Machine learning genomics"
+               onerror="this.parentElement.style.background='var(--teal-light)'">
+          <div class="proj-ip-overlay">
+            <span class="proj-ip-badge"><i class="fas fa-spinner fa-spin"></i> In Progress</span>
+          </div>
+        </div>
+        <div class="proj-ip-body">
+          <div class="proj-tags-row">
+            <span class="proj-tag orange">Machine Learning</span>
+            <span class="proj-tag green">ORNL</span>
+          </div>
+          <h3>ML Models for Microbial Growth Prediction</h3>
+          <p>Random Forest models predicting microbial growth from engineered phenotype features —
+             targeting 20–30% error reduction. Ongoing at Oak Ridge National Laboratory.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
 </div>
 
 <footer>
   &copy; 2025 Muhammad Ajagbe &mdash;
-  <a href="mailto:d1stadeyemi@gmail.com">d1stadeyemi@gmail.com</a>
+  <a href="mailto:majagbe@vols.utk.edu">majagbe@vols.utk.edu</a>
 </footer>
 
 </body>
