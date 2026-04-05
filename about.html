@@ -24,67 +24,88 @@
 <div class="page-wrapper">
   <h1 class="page-title">About <span>Me</span></h1>
 
-  <!-- ① HERO: WHO I AM & VALUE PROPOSITION -->
+  <!-- ① HERO CARD -->
   <div class="card about-hero-card">
-    <div class="about-headline">
-      <div class="about-headline-icon"><i class="fas fa-user-circle"></i></div>
-      <div>
-        <h2>Muhammad Adeyemi Ajagbe</h2>
-        <p class="about-tagline">
-          Computational biologist turning large-scale sequencing data into biological insight —
-          from microbial community reconstruction to machine learning-driven genomic prediction.
+    <div class="about-hero-inner">
+      <div class="about-hero-text">
+        <div class="about-headline">
+          <div class="about-headline-icon"><i class="fas fa-user-circle"></i></div>
+          <div>
+            <h2>Muhammad Adeyemi Ajagbe</h2>
+            <p class="about-tagline">
+              Computational biologist turning large-scale sequencing data into biological insight —
+              from microbial community reconstruction to machine learning-driven genomic prediction.
+            </p>
+          </div>
+        </div>
+        <p>
+          I am a PhD student in Genomic Science and Technology at the University of Tennessee,
+          Knoxville (GPA: 3.83/4.0), working at the intersection of metagenomics, machine learning,
+          and multi-omics integration. My research develops scalable computational frameworks
+          that extract functional meaning from high-dimensional sequencing data — linking
+          sequence-derived features to biological and clinical outcomes.
+        </p>
+        <p>
+          With two MSc degrees — in Applied Poultry Science (Computational Genomics) from the
+          University of Edinburgh (Distinction) and in Biotechnology (Computational Genomics)
+          from the American University in Cairo (GPA: 3.875) — and hands-on experience spanning
+          metagenomics, regulatory genomics, bulk RNA-seq, and ML-based predictive modeling,
+          I bring a rare combination of depth and breadth to computational biology.
         </p>
       </div>
-    </div>
-    <p>
-      I am a PhD student in Genomic Science and Technology at the University of Tennessee, Knoxville
-      (GPA: 3.83/4.0), working at the intersection of metagenomics, machine learning, and multi-omics
-      integration. My research focuses on developing scalable computational frameworks that extract
-      functional meaning from high-dimensional sequencing data — linking sequence-derived features
-      to biological and clinical outcomes.
-    </p>
-    <p>
-      With two MSc degrees — one in Applied Poultry Science (Computational Genomics) from the
-      University of Edinburgh (Distinction) and one in Biotechnology (Computational Genomics)
-      from the American University in Cairo (GPA: 3.875/4.0) — and hands-on research experience
-      spanning metagenomics, regulatory genomics, bulk RNA-seq, and ML-based predictive modeling,
-      I bring a rare combination of depth and breadth to computational biology.
-    </p>
-  </div>
-
-  <!-- ② WHAT I BRING: IMPACT METRICS (recruiter's first scan) -->
-  <div class="about-metrics-row">
-    <div class="about-metric">
-      <span class="metric-value">&gt;1 TB</span>
-      <span class="metric-label">Sequencing data processed end-to-end</span>
-    </div>
-    <div class="about-metric">
-      <span class="metric-value">37</span>
-      <span class="metric-label">Metagenome-assembled genomes reconstructed</span>
-    </div>
-    <div class="about-metric">
-      <span class="metric-value">320+</span>
-      <span class="metric-label">Biosynthetic gene clusters identified</span>
-    </div>
-    <div class="about-metric">
-      <span class="metric-value">15</span>
-      <span class="metric-label">Potentially novel species, new to global databases</span>
-    </div>
-    <div class="about-metric">
-      <span class="metric-value">3</span>
-      <span class="metric-label">Publications &amp; conference presentations (2025)</span>
-    </div>
-    <div class="about-metric">
-      <span class="metric-value">5+</span>
-      <span class="metric-label">Awards &amp; competitive scholarships</span>
+      <div class="about-hero-img-wrap">
+        <img
+          src="https://images.unsplash.com/photo-1607799279861-4dd421887fb3?w=420&q=80"
+          alt="Computational biology illustration"
+          class="about-hero-img"
+          onerror="this.parentElement.style.display='none'">
+      </div>
     </div>
   </div>
 
-  <!-- ③ RESEARCH EXPERIENCE (most important section for recruiters) -->
+  <!-- ② IMPACT METRICS CARD -->
+  <div class="card about-metrics-card">
+    <h2><i class="fas fa-chart-bar about-icon"></i> Research at a Glance</h2>
+    <div class="about-metrics-row">
+      <div class="about-metric">
+        <i class="fas fa-database metric-icon"></i>
+        <span class="metric-value">&gt;1 TB</span>
+        <span class="metric-label">Sequencing data processed end-to-end</span>
+      </div>
+      <div class="about-metric">
+        <i class="fas fa-dna metric-icon"></i>
+        <span class="metric-value">37</span>
+        <span class="metric-label">Metagenome-assembled genomes reconstructed</span>
+      </div>
+      <div class="about-metric">
+        <i class="fas fa-microscope metric-icon"></i>
+        <span class="metric-value">320+</span>
+        <span class="metric-label">Biosynthetic gene clusters identified</span>
+      </div>
+      <div class="about-metric">
+        <i class="fas fa-globe metric-icon"></i>
+        <span class="metric-value">15</span>
+        <span class="metric-label">Potentially novel species, new to global databases</span>
+      </div>
+      <div class="about-metric">
+        <i class="fas fa-book-open metric-icon"></i>
+        <span class="metric-value">3</span>
+        <span class="metric-label">Publications &amp; conference presentations (2025)</span>
+      </div>
+      <div class="about-metric">
+        <i class="fas fa-award metric-icon"></i>
+        <span class="metric-value">5+</span>
+        <span class="metric-label">Awards &amp; competitive scholarships</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ③ RESEARCH EXPERIENCE -->
   <div class="card">
     <h2><i class="fas fa-flask about-icon"></i> Research Experience</h2>
     <div class="timeline">
 
+      <!-- ORNL -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -93,19 +114,31 @@
             <span class="timeline-date">Oct 2025 – Mar 2026</span>
           </div>
           <span class="timeline-place">Oak Ridge National Laboratory (ORNL) · Knoxville, TN</span>
-          <p>
-            Developed machine learning models at one of the world's leading national science laboratories,
-            applying Random Forest approaches to predict microbial growth on glucose substrates from
-            engineered time-series features — targeting 20–30% error reduction over baseline statistical methods.
-          </p>
-          <ul class="about-achievements">
-            <li>Engineered predictive features from experimental phenotype time-series data for ML model training</li>
-            <li>Integrated diverse genomic datasets to build and validate predictive models in reproducible Python pipelines</li>
-            <li>Designed ML workflows optimised for iterative improvement and downstream biological interpretation</li>
-          </ul>
+          <div class="timeline-with-img">
+            <div class="timeline-text">
+              <p>
+                Developed machine learning models at one of the world's leading national science
+                laboratories — applying Random Forest approaches to predict microbial growth from
+                engineered time-series phenotype features, targeting 20–30% error reduction over
+                baseline statistical methods.
+              </p>
+              <ul class="about-achievements">
+                <li>Engineered predictive features from experimental phenotype time-series data</li>
+                <li>Integrated diverse genomic datasets into reproducible Python ML pipelines</li>
+                <li>Designed iterative workflows optimised for biological interpretability</li>
+              </ul>
+            </div>
+            <div class="timeline-img-wrap">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=260&q=80"
+                   alt="Machine learning genomics"
+                   onerror="this.parentElement.style.display='none'">
+              <span class="img-caption">ML · ORNL</span>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Edinburgh -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -113,20 +146,32 @@
             <span class="timeline-title">Graduate Research Assistant — Regulatory Genomics</span>
             <span class="timeline-date">Jun 2024 – Jul 2025</span>
           </div>
-          <span class="timeline-place">Royal (Dick) School of Veterinary Studies · University of Edinburgh, UK</span>
-          <p>
-            Investigated transcriptional regulation of eggshell cuticle deposition in chickens through
-            promoter motif-based network analysis — awarded <strong>Best Dissertation</strong> by the University of Edinburgh (Nov 2025).
-          </p>
-          <ul class="about-achievements">
-            <li>Retrieved and analysed promoter regions of 146 differentially expressed genes (DEGs)</li>
-            <li>Identified enriched transcription factor binding motifs using MEME Suite, mapped to candidate TFs via JASPAR</li>
-            <li>Constructed gene regulatory networks in R, uncovering 6 hub TFs each regulating &gt;100 genes</li>
-            <li>Identified KLF2 as a key regulatory node linking 75 DEGs across multiple biological pathways</li>
-          </ul>
+          <span class="timeline-place">Royal (Dick) School of Veterinary Studies · University of Edinburgh, UK &nbsp;🏆 Best Dissertation</span>
+          <div class="timeline-with-img">
+            <div class="timeline-text">
+              <p>
+                Investigated transcriptional regulation of eggshell cuticle deposition in chickens
+                through promoter motif-based network analysis — awarded Best Dissertation by the
+                University of Edinburgh (Nov 2025).
+              </p>
+              <ul class="about-achievements">
+                <li>Retrieved and analysed promoter regions of 146 differentially expressed genes</li>
+                <li>Identified enriched TF binding motifs (MEME Suite), mapped via JASPAR</li>
+                <li>Constructed regulatory networks in R — 6 hub TFs each regulating &gt;100 genes</li>
+                <li>Identified KLF2 as a key node linking 75 DEGs across multiple pathways</li>
+              </ul>
+            </div>
+            <div class="timeline-img-wrap">
+              <img src="https://images.unsplash.com/photo-1576086213369-97a306d36557?w=260&q=80"
+                   alt="Regulatory genomics network"
+                   onerror="this.parentElement.style.display='none'">
+              <span class="img-caption">Regulatory Genomics · Edinburgh</span>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- AUC Metagenomics -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -134,22 +179,34 @@
             <span class="timeline-title">Graduate Research Assistant — Metagenomics &amp; Large-Scale Data Analysis</span>
             <span class="timeline-date">Sep 2023 – Jul 2025</span>
           </div>
-          <span class="timeline-place">The American University in Cairo (AUC) · Siam Lab, Egypt</span>
-          <p>
-            Led end-to-end computational characterisation of the Siwa Oasis microbiome — one of Egypt's
-            historically therapeutic spring environments — using high-resolution NovaSeq-6000 shotgun
-            sequencing. Produced two manuscripts, one under review and one presented at an international conference.
-          </p>
-          <ul class="about-achievements">
-            <li>Built scalable Python/Bash pipelines on HPC (SLURM) to process &gt;1 TB of raw sequencing data</li>
-            <li>Reconstructed 37 high-quality MAGs including 15 potentially novel species absent from GTDB</li>
-            <li>Identified 320+ biosynthetic gene clusters (antiSMASH/PRISM) — including novel antibiotic candidates</li>
-            <li>Characterised 6 antimicrobial resistance genes and 11 virulence factors with public health relevance</li>
-            <li>Reconstructed metabolic pathways (DRAM) linking microbial function to nitrogen, sulphur &amp; carbon cycling</li>
-          </ul>
+          <span class="timeline-place">American University in Cairo (AUC) · Siam Lab, Egypt</span>
+          <div class="timeline-with-img">
+            <div class="timeline-text">
+              <p>
+                Led end-to-end computational characterisation of the Siwa Oasis microbiome —
+                one of Egypt's historically therapeutic spring environments — using high-resolution
+                NovaSeq-6000 shotgun sequencing. Produced two manuscripts (one under review,
+                one presented internationally).
+              </p>
+              <ul class="about-achievements">
+                <li>Built scalable Python/Bash pipelines on HPC (SLURM) to process &gt;1 TB of raw data</li>
+                <li>Reconstructed 37 MAGs including 15 potentially novel species absent from GTDB</li>
+                <li>Identified 320+ biosynthetic gene clusters — novel antibiotic candidates included</li>
+                <li>Characterised 6 AMR genes and 11 virulence factors with public health relevance</li>
+                <li>Reconstructed metabolic pathways (DRAM) for nitrogen, sulphur &amp; carbon cycling</li>
+              </ul>
+            </div>
+            <div class="timeline-img-wrap">
+              <img src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?w=260&q=80"
+                   alt="Metagenomics lab sequencing"
+                   onerror="this.parentElement.style.display='none'">
+              <span class="img-caption">Metagenomics · Siwa Oasis</span>
+            </div>
+          </div>
         </div>
       </div>
 
+      <!-- Teaching -->
       <div class="timeline-item">
         <div class="timeline-dot"></div>
         <div class="timeline-content">
@@ -157,10 +214,10 @@
             <span class="timeline-title">Graduate Teaching Assistant — Department of Biology</span>
             <span class="timeline-date">Sep 2023 – Dec 2023</span>
           </div>
-          <span class="timeline-place">The American University in Cairo (AUC)</span>
+          <span class="timeline-place">American University in Cairo (AUC)</span>
           <p>
-            Supported course delivery, facilitated student discussions, administered assessments,
-            and held weekly office hours — developing communication and mentoring skills alongside research.
+            Facilitated student discussions, administered assessments, and held weekly office hours —
+            developing communication and mentoring skills alongside active research.
           </p>
         </div>
       </div>
@@ -171,68 +228,53 @@
   <!-- ④ EDUCATION -->
   <div class="card">
     <h2><i class="fas fa-graduation-cap about-icon"></i> Education</h2>
-    <div class="timeline">
+    <div class="edu-grid">
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <span class="timeline-title">PhD — Genomic Science &amp; Technology</span>
-            <span class="timeline-date">Aug 2025 – Present</span>
-          </div>
-          <span class="timeline-place">University of Tennessee, Knoxville (UTK) · GPA: 3.83/4.0</span>
-          <p>
-            Doctoral training in computational genomics and bioinformatics. Coursework includes
-            microbiome analysis, Python for genomics, and genomic science foundations. Actively
-            developing expertise in single-cell RNA-seq analysis and AI/ML applications to genomics data.
-          </p>
+      <div class="edu-card">
+        <div class="edu-icon" style="background: linear-gradient(135deg,#0891b2,#0f2a5e);">
+          <i class="fas fa-microscope"></i>
+        </div>
+        <div class="edu-body">
+          <span class="edu-date">Aug 2025 – Present</span>
+          <h3>PhD — Genomic Science &amp; Technology</h3>
+          <span class="edu-place">University of Tennessee, Knoxville · GPA 3.83/4.0</span>
+          <p>Microbiome analysis · Python for genomics · scRNA-seq (in progress) · AI/ML for genomics</p>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <span class="timeline-title">MSc — Applied Poultry Science (Computational Genomics)</span>
-            <span class="timeline-date">Sep 2022 – Jul 2025</span>
-          </div>
-          <span class="timeline-place">University of Edinburgh, UK · Grade: Distinction &nbsp;🏆 Best Dissertation Award</span>
-          <p>
-            Thesis: <em>Transcriptional Regulation of Eggshell Cuticle Deposition in Chickens:
-            A Promoter Motif-Based Network Analysis.</em>
-            Focus on regulatory genomics, transcription factor binding, and gene network construction.
-          </p>
+      <div class="edu-card">
+        <div class="edu-icon" style="background: linear-gradient(135deg,#7c3aed,#0f2a5e);">
+          <i class="fas fa-award"></i>
+        </div>
+        <div class="edu-body">
+          <span class="edu-date">Sep 2022 – Jul 2025</span>
+          <h3>MSc — Applied Poultry Science (Computational Genomics)</h3>
+          <span class="edu-place">University of Edinburgh, UK · Distinction 🏆 Best Dissertation</span>
+          <p><em>Transcriptional Regulation of Eggshell Cuticle Deposition in Chickens: A Promoter Motif-Based Network Analysis</em></p>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <span class="timeline-title">MSc — Biotechnology (Computational Genomics)</span>
-            <span class="timeline-date">Jan 2023 – Jul 2025</span>
-          </div>
-          <span class="timeline-place">American University in Cairo (AUC), Egypt · GPA: 3.875/4.0 &nbsp;🏆 Outstanding Academic Performance</span>
-          <p>
-            Thesis: <em>Unraveling Novel Biosynthetic Gene Clusters from the Siwa Oasis Microbiome.</em>
-            Focus on large-scale metagenomics, genome-resolved analysis, and natural product discovery.
-            Supported by the African Graduate Fellowship.
-          </p>
+      <div class="edu-card">
+        <div class="edu-icon" style="background: linear-gradient(135deg,#059669,#0891b2);">
+          <i class="fas fa-dna"></i>
+        </div>
+        <div class="edu-body">
+          <span class="edu-date">Jan 2023 – Jul 2025</span>
+          <h3>MSc — Biotechnology (Computational Genomics)</h3>
+          <span class="edu-place">American University in Cairo · GPA 3.875/4.0 🏆 Outstanding Academic Performance</span>
+          <p><em>Unraveling Novel Biosynthetic Gene Clusters from the Siwa Oasis Microbiome</em></p>
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="timeline-content">
-          <div class="timeline-header">
-            <span class="timeline-title">BSc — Animal Physiology</span>
-            <span class="timeline-date">Jan 2013 – May 2019</span>
-          </div>
-          <span class="timeline-place">Federal University of Agriculture, Abeokuta (FUNAAB), Nigeria · GPA: 4.06/5.0</span>
-          <p>
-            Thesis: <em>The Effect of Moringa oleifera Leaf Supplement on Milk Yield of West African Dwarf Goat.</em>
-            Grounding in biological sciences, animal physiology, and experimental research design.
-          </p>
+      <div class="edu-card">
+        <div class="edu-icon" style="background: linear-gradient(135deg,#d97706,#0f2a5e);">
+          <i class="fas fa-seedling"></i>
+        </div>
+        <div class="edu-body">
+          <span class="edu-date">Jan 2013 – May 2019</span>
+          <h3>BSc — Animal Physiology</h3>
+          <span class="edu-place">Federal University of Agriculture, Abeokuta (FUNAAB) · GPA 4.06/5.0</span>
+          <p><em>Effect of Moringa oleifera Leaf Supplement on Milk Yield of West African Dwarf Goat</em></p>
         </div>
       </div>
 
@@ -242,30 +284,38 @@
   <!-- ⑤ RESEARCH DIRECTION -->
   <div class="card">
     <h2><i class="fas fa-compass about-icon"></i> Research Direction &amp; Vision</h2>
-    <p>
-      My research sits at the intersection of microbial genomics, statistical learning, and multi-omics
-      integration. I am particularly focused on building computational frameworks that move beyond
-      description — using sequence-level features and multi-modal biological data to make predictions
-      about function, resistance, and disease outcomes.
-    </p>
-    <p>
-      Currently, I am expanding my expertise into <strong>single-cell RNA-seq analysis</strong> and
-      exploring how <strong>deep learning architectures</strong> (transformers, graph neural networks)
-      can be applied to biological sequences. I am motivated to contribute to areas where computational
-      biology is reshaping drug discovery, oncology, and infectious disease — building models that
-      not only describe biology but predict and ultimately guide therapeutic decisions.
-    </p>
-    <div class="about-interest-tags">
-      <span>Metagenomics &amp; Microbiome</span>
-      <span>Bulk &amp; Single-Cell RNA-seq</span>
-      <span>ML / AI for Genomics</span>
-      <span>Drug Discovery</span>
-      <span>AMR Research</span>
-      <span>Regulatory Genomics</span>
-      <span>Multi-Omics Integration</span>
-      <span>Biosynthetic Gene Clusters</span>
-      <span>Predictive Biomarkers</span>
-      <span>HPC &amp; Scalable Pipelines</span>
+    <div class="vision-layout">
+      <div class="vision-text">
+        <p>
+          My research sits at the intersection of microbial genomics, statistical learning,
+          and multi-omics integration. I am focused on building frameworks that move beyond
+          description — using sequence-level features and multi-modal biological data to
+          predict function, resistance, and disease outcomes.
+        </p>
+        <p>
+          I am currently expanding into <strong>single-cell RNA-seq analysis</strong> and
+          exploring how <strong>deep learning architectures</strong> (transformers, graph
+          neural networks) can be applied to biological sequences — targeting drug discovery,
+          oncology, and infectious disease applications where AI is reshaping what is possible.
+        </p>
+        <div class="about-interest-tags">
+          <span>Metagenomics &amp; Microbiome</span>
+          <span>Bulk &amp; scRNA-seq</span>
+          <span>ML / AI for Genomics</span>
+          <span>Drug Discovery</span>
+          <span>AMR Research</span>
+          <span>Regulatory Genomics</span>
+          <span>Multi-Omics</span>
+          <span>Biosynthetic Gene Clusters</span>
+          <span>Predictive Biomarkers</span>
+          <span>HPC Pipelines</span>
+        </div>
+      </div>
+      <div class="vision-img-wrap">
+        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?w=300&q=80"
+             alt="Genomics research vision"
+             onerror="this.parentElement.style.display='none'">
+      </div>
     </div>
   </div>
 
@@ -273,26 +323,26 @@
   <div class="card about-goals-card">
     <h2><i class="fas fa-bullseye about-icon"></i> What I'm Looking For</h2>
     <p>
-      I am actively seeking roles in <strong>computational biology, bioinformatics, and genomics data science</strong>
-      — particularly within teams working on drug discovery, oncology, infectious disease, or
-      microbiome-based therapeutics. I thrive where rigorous science meets scalable engineering,
-      and where the goal is not just to analyse data but to translate it into biological and clinical impact.
+      I am actively seeking roles in <strong>computational biology, bioinformatics, and genomics
+      data science</strong> — particularly within teams working on drug discovery, oncology,
+      infectious disease, or microbiome-based therapeutics. I thrive where rigorous science
+      meets scalable engineering and where data translates into clinical impact.
     </p>
     <p>
-      I bring a demonstrated ability to independently design and execute computational projects
+      I bring demonstrated ability to independently design and execute computational projects
       end-to-end, collaborate across disciplines, and communicate findings to both scientific
-      and non-scientific audiences — skills I am eager to apply in an industry setting.
+      and non-scientific audiences.
     </p>
-    <div style="margin-top: 20px; display:flex; gap:12px; flex-wrap:wrap;">
+    <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
       <a class="btn" href="mailto:majagbe@vols.utk.edu">
         <i class="fas fa-envelope"></i> Get in Touch
       </a>
       <a class="btn" href="https://github.com/d1stadeyemi" target="_blank" rel="noopener"
-         style="background: linear-gradient(90deg, #1a3d7c, #0891b2);">
+         style="background:linear-gradient(90deg,#1a3d7c,#0891b2);">
         <i class="fab fa-github"></i> GitHub
       </a>
       <a class="btn" href="publications.html"
-         style="background: linear-gradient(90deg, #059669, #0891b2);">
+         style="background:linear-gradient(90deg,#059669,#0891b2);">
         <i class="fas fa-book-open"></i> Publications
       </a>
     </div>
