@@ -112,7 +112,7 @@ body {
 /* ===== PAGE WRAPPER ===== */
 .page-wrapper {
   flex: 1;
-  padding: 48px 2.5%;
+  padding: 48px 4.5%;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -161,7 +161,7 @@ body {
   display: flex;
   gap: 42px;
   align-items: flex-start;
-  padding: 48px 2.5%;
+  padding: 48px 4.5%;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -258,7 +258,7 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--text-muted);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   text-decoration: none;
   transition: var(--transition);
 }
