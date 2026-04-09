@@ -40,7 +40,7 @@
 }
 
 /* ===== BASE ===== */
-html { scroll-behavior: smooth; font-size: 17px; }
+html { scroll-behavior: smooth; font-size: 20px; }
 
 body {
   font-family: var(--font-body);
