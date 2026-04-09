@@ -112,7 +112,7 @@ body {
 /* ===== PAGE WRAPPER ===== */
 .page-wrapper {
   flex: 1;
-  padding: 48px 9.5%;
+  padding: 48px 1.5%;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -159,9 +159,9 @@ body {
 /* ===== HOME MAIN LAYOUT ===== */
 .main-container {
   display: flex;
-  gap: 40px;
+  gap: 52px;
   align-items: flex-start;
-  padding: 48px 9.5%;
+  padding: 48px 1.5%;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -248,8 +248,8 @@ body {
 }
 
 .social-icons a {
-  width: 50px;
-  height: 50px;
+  width: 46px;
+  height: 46px;
   border-radius: 12px;
   background: var(--bg-white);
   border: 1px solid var(--border);
@@ -258,7 +258,7 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--text-muted);
-  font-size: 2.0rem;
+  font-size: 1.3rem;
   text-decoration: none;
   transition: var(--transition);
 }
@@ -2117,4 +2117,243 @@ footer a {
     gap: 14px;
   }
   .aw-icon-wrap { width: 44px; height: 44px; font-size: 1.1rem; }
+}
+
+/* ===== FUN PAGE ===== */
+.fun-intro {
+  color: var(--text-muted);
+  font-size: 1rem;
+  margin-bottom: 36px;
+  margin-top: -16px;
+  font-style: italic;
+}
+
+/* ── ADVENTURE CARD ── */
+.fun-card {
+  display: flex;
+  gap: 0;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 32px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+}
+
+.fun-card:hover {
+  box-shadow: var(--shadow-lg);
+  border-color: var(--border-accent);
+  transform: translateY(-2px);
+}
+
+/* Reverse layout for second card */
+.fun-card-reverse {
+  flex-direction: row-reverse;
+}
+
+/* ── LEFT (IMAGE) PANEL ── */
+.fun-left {
+  width: 300px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.fun-img-wrap {
+  position: relative;
+  flex: 1;
+  min-height: 260px;
+  overflow: hidden;
+  background: var(--bg-page);
+}
+
+.fun-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: var(--transition);
+}
+
+.fun-card:hover .fun-img-wrap img {
+  transform: scale(1.04);
+}
+
+.fun-img-placeholder {
+  background: linear-gradient(135deg, var(--teal-light), #e8eef8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fun-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 14px;
+  background: linear-gradient(to top, rgba(15,42,94,0.75), transparent);
+  display: flex;
+  align-items: center;
+}
+
+.fun-img-overlay span {
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.fun-img-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  background: var(--bg-page);
+  border-top: 1px solid var(--border);
+}
+
+.fun-img-meta span {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.fun-img-meta i {
+  color: var(--teal);
+  width: 12px;
+  text-align: center;
+}
+
+/* ── RIGHT (STORY) PANEL ── */
+.fun-right {
+  flex: 1;
+  padding: 28px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border-left: 1px solid var(--border);
+}
+
+.fun-card-reverse .fun-right {
+  border-left: none;
+  border-right: 1px solid var(--border);
+}
+
+/* ── TAGS ── */
+.fun-tags-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.fun-tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 10px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.fun-tag.green  { background: var(--green-light);  color: var(--green);      border: 1px solid #6ee7b7; }
+.fun-tag.teal   { background: var(--teal-light);   color: var(--teal-dark);  border: 1px solid #a5e0ef; }
+.fun-tag.navy   { background: #e8eef8;              color: var(--navy);       border: 1px solid #b6cef7; }
+.fun-tag.orange { background: #fff7ed;              color: #c2410c;           border: 1px solid #fed7aa; }
+
+/* ── TITLE & STORY ── */
+.fun-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.4;
+  margin: 0;
+}
+
+.fun-story p {
+  font-size: 0.92rem;
+  color: var(--text-body);
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.fun-story p:last-child { margin-bottom: 0; }
+
+/* ── PULL QUOTE ── */
+.fun-highlight {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 6px;
+  padding: 12px 16px;
+  background: var(--teal-light);
+  border-left: 3px solid var(--teal);
+  border-radius: 0 8px 8px 0;
+}
+
+.fun-highlight i {
+  color: var(--teal);
+  font-size: 0.9rem;
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.fun-highlight span {
+  font-size: 0.88rem;
+  font-style: italic;
+  font-weight: 600;
+  color: var(--navy);
+  line-height: 1.5;
+}
+
+/* ── MORE COMING SOON ── */
+.fun-more {
+  text-align: center;
+  padding: 36px 20px;
+  color: var(--text-muted);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.fun-more i {
+  font-size: 2rem;
+  color: var(--teal);
+  opacity: 0.4;
+}
+
+.fun-more p {
+  font-size: 0.9rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 860px) {
+  .fun-card, .fun-card-reverse {
+    flex-direction: column;
+  }
+  .fun-left { width: 100%; }
+  .fun-img-wrap { min-height: 200px; }
+  .fun-right {
+    border-left: none;
+    border-right: none;
+    border-top: 1px solid var(--border);
+    padding: 20px;
+  }
+  .fun-card-reverse .fun-right { border-right: none; }
 }
