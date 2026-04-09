@@ -29,177 +29,282 @@
     <p class="hero-tagline">Decoding Life — One Genome at a Time</p>
   </div>
 </div>
-  
+
 <div class="page-wrapper">
-  <h1 class="page-title">Projects</h1>
+  <h1 class="page-title">Research <span>Projects</span></h1>
   <p class="projects-intro">
     End-to-end computational projects spanning metagenomics, transcriptomics, and predictive modeling,
     publicly available on GitHub.
   </p>
 
   <!-- ══════════════════════════════════════════
-       IN PROGRESS SECTION
+       COMPLETED PROJECTS
   ══════════════════════════════════════════ -->
-  <div class="proj-inprogress-section">
-    <h2 class="proj-section-heading"><i class="fas fa-code-branch"></i> In Progress</h2>
-    <div class="proj-inprogress-grid">
+  <h2 class="proj-section-heading"><i class="fas fa-check-circle"></i> Completed Projects</h2>
 
-      <div class="proj-ip-card">
-        <div class="proj-ip-img">
-          <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=400&q=80"
-               alt="Single cell RNA-seq"
-               onerror="this.parentElement.style.background='var(--teal-light)'">
-          <div class="proj-ip-overlay">
-            <span class="proj-ip-badge"><i class="fas fa-spinner fa-spin"></i> In Progress</span>
+  <div class="proj-main-grid">
+
+    <!-- ══ PROJECT 1 — SIWA ══ -->
+    <div class="proj-card featured">
+      <div class="proj-img-wrap">
+        <img src="https://www.surfertoday.com/images/stories/oasis-in-desert.jpg"
+             alt="Metagenomics pipeline"
+             onerror="this.src='https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&q=80'">
+        <span class="proj-featured-badge"><i class="fas fa-star"></i> Featured</span>
+      </div>
+      <div class="proj-body">
+        <div class="proj-tags-row">
+          <span class="proj-tag teal">Metagenomics</span>
+          <span class="proj-tag navy">BGC Discovery</span>
+          <span class="proj-tag green">Drug Discovery</span>
+          <span class="proj-tag orange">HPC · SLURM</span>
+        </div>
+        <h2 class="proj-title">Siwa Oasis Microbiome: End-to-End Metagenomic Pipeline</h2>
+        <p class="proj-subtitle">
+          From raw sequencing reads to biosynthetic gene cluster discovery — a fully automated,
+          three-stage pipeline characterising the microbial communities of Egypt's historically
+          therapeutic Cleopatra and Fatnas springs.
+        </p>
+        <div class="proj-metrics">
+          <div class="proj-metric"><span class="pm-val">&gt;1 TB</span><span class="pm-lbl">Data processed</span></div>
+          <div class="proj-metric"><span class="pm-val">37</span><span class="pm-lbl">MAGs reconstructed</span></div>
+          <div class="proj-metric"><span class="pm-val">320+</span><span class="pm-lbl">BGCs identified</span></div>
+          <div class="proj-metric"><span class="pm-val">15</span><span class="pm-lbl">Novel species</span></div>
+        </div>
+        <div class="proj-pipeline">
+          <div class="pipe-step">
+            <div class="pipe-icon" style="background:linear-gradient(135deg,#0891b2,#0f2a5e);">
+              <i class="fas fa-filter"></i>
+            </div>
+            <div>
+              <span class="pipe-label">Stage 1</span>
+              <span class="pipe-name">QC &amp; Profiling</span>
+              <span class="pipe-tools">fastp · Kraken2 · Bracken</span>
+            </div>
+          </div>
+          <div class="pipe-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="pipe-step">
+            <div class="pipe-icon" style="background:linear-gradient(135deg,#059669,#0891b2);">
+              <i class="fas fa-layer-group"></i>
+            </div>
+            <div>
+              <span class="pipe-label">Stage 2</span>
+              <span class="pipe-name">Assembly &amp; MAGs</span>
+              <span class="pipe-tools">MEGAHIT · MetaWRAP · GTDB-Tk</span>
+            </div>
+          </div>
+          <div class="pipe-arrow"><i class="fas fa-chevron-right"></i></div>
+          <div class="pipe-step">
+            <div class="pipe-icon" style="background:linear-gradient(135deg,#d97706,#ea580c);">
+              <i class="fas fa-dna"></i>
+            </div>
+            <div>
+              <span class="pipe-label">Stage 3</span>
+              <span class="pipe-name">BGC Discovery</span>
+              <span class="pipe-tools">antiSMASH · BiG-MAP · DeepBGC</span>
+            </div>
           </div>
         </div>
-        <div class="proj-ip-body">
-          <div class="proj-tags-row">
-            <span class="proj-tag teal">scRNA-seq</span>
-            <span class="proj-tag navy">Cancer Biology</span>
-          </div>
-          <h3>Reproducing scRNA-seq Analysis of Tumor Microenvironment</h3>
-          <p>Reproducing a published single-cell RNA-seq study to build hands-on expertise in
-             cell clustering, UMAP, and tumor microenvironment characterisation.</p>
+        <div class="proj-actions">
+          <a class="btn proj-btn" href="https://github.com/d1stadeyemi/BGC_analysis" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
+          <a class="btn proj-btn proj-btn-outline" href="publications.html">
+            <i class="fas fa-book-open"></i> Related Publication
+          </a>
         </div>
       </div>
+    </div>
 
-      <div class="proj-ip-card">
-        <div class="proj-ip-img">
-          <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=400&q=80"
-               alt="Machine learning genomics"
-               onerror="this.parentElement.style.background='var(--teal-light)'">
-          <div class="proj-ip-overlay">
-            <span class="proj-ip-badge"><i class="fas fa-spinner fa-spin"></i> In Progress</span>
-          </div>
+    <!-- ══ PROJECT 2 — MICROARRAY ══ -->
+    <div class="proj-card">
+      <div class="proj-img-wrap proj-img-short">
+        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
+             alt="Differential gene expression"
+             onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80'">
+      </div>
+      <div class="proj-body">
+        <div class="proj-tags-row">
+          <span class="proj-tag teal">Transcriptomics</span>
+          <span class="proj-tag navy">Microarray</span>
+          <span class="proj-tag green">R · limma</span>
         </div>
-        <div class="proj-ip-body">
-          <div class="proj-tags-row">
-            <span class="proj-tag orange">Machine Learning</span>
-            <span class="proj-tag green">ORNL</span>
-          </div>
-          <h3>ML Models for Microbial Growth Prediction</h3>
-          <p>Random Forest models predicting microbial growth from engineered phenotype features,
-             targeting 20–30% error reduction. Ongoing at Oak Ridge National Laboratory.</p>
+        <h2 class="proj-title">Microarray Differential Gene Expression Analysis</h2>
+        <p class="proj-subtitle">
+          Complete DEG workflow on GSE47960 (Mitchell et al., 2013), from raw microarray data
+          through normalisation and statistical testing to publication-quality visualisation.
+        </p>
+        <div class="proj-outputs">
+          <span class="proj-output-item"><i class="fas fa-chart-bar"></i> Volcano plots</span>
+          <span class="proj-output-item"><i class="fas fa-circle-nodes"></i> Venn diagrams</span>
+          <span class="proj-output-item"><i class="fas fa-table"></i> DEG tables (CSV/TSV)</span>
+          <span class="proj-output-item"><i class="fas fa-chart-line"></i> QC plots</span>
+        </div>
+        <div class="proj-actions">
+          <a class="btn proj-btn" href="https://github.com/d1stadeyemi/Microarray_analysis" target="_blank" rel="noopener">
+            <i class="fab fa-github"></i> View on GitHub
+          </a>
         </div>
       </div>
+    </div>
 
+  </div><!-- end proj-main-grid -->
+
+  <!-- ══════════════════════════════════════════
+       ACTIVE PROJECT — scRNA-seq
+  ══════════════════════════════════════════ -->
+  <h2 class="proj-section-heading" style="margin-top:12px;"><i class="fas fa-spinner fa-spin"></i> Active Project</h2>
+
+  <div class="proj-card proj-card-active">
+    <div class="proj-img-wrap" style="height:180px;">
+      <img src="https://images.unsplash.com/photo-1582719471384-894fbb16e074?w=1200&q=80"
+           alt="Single-cell RNA-seq tumor microenvironment"
+           onerror="this.src='https://images.unsplash.com/photo-1576086213369-97a306d36557?w=1200&q=80'">
+      <span class="proj-featured-badge" style="background:linear-gradient(90deg,#059669,#0891b2);">
+        <i class="fas fa-circle" style="font-size:0.5rem;animation:pulse 1.5s infinite;"></i> Active
+      </span>
+    </div>
+    <div class="proj-body">
+      <div class="proj-tags-row">
+        <span class="proj-tag teal">scRNA-seq</span>
+        <span class="proj-tag navy">Cancer Biology</span>
+        <span class="proj-tag green">Tumor Microenvironment</span>
+        <span class="proj-tag orange">Snakemake · HPC</span>
+      </div>
+
+      <div style="display:flex; gap:28px; align-items:flex-start; flex-wrap:wrap;">
+
+        <!-- LEFT: title, description, learning -->
+        <div style="flex:1; min-width:240px;">
+          <h2 class="proj-title">
+            scRNA-seq Reproduction: Tumor Heterogeneity in Advanced NSCLC
+          </h2>
+          <p class="proj-subtitle">
+            Reproducing Wu et al. (2021), <em>Nature Communications</em> — a landmark study
+            profiling tumor heterogeneity and the immune microenvironment in advanced
+            non-small cell lung cancer (NSCLC) using single-cell RNA-seq.
+            Built from scratch in the Scanpy ecosystem, fully automated via Snakemake on HPC.
+          </p>
+
+          <div style="margin-bottom:10px;">
+            <span class="skill-label" style="margin-bottom:6px; display:block;">Skills Being Developed</span>
+            <div class="scrna-learning">
+              <span>Scanpy</span>
+              <span>scRNA-seq QC</span>
+              <span>UMAP / PCA</span>
+              <span>Leiden Clustering</span>
+              <span>Cell Type Annotation</span>
+              <span>CNV Inference</span>
+              <span>Trajectory Analysis</span>
+              <span>Snakemake</span>
+              <span>Tumor Microenvironment</span>
+              <span>HPC · SLURM</span>
+            </div>
+          </div>
+
+          <div class="proj-actions">
+            <a class="btn proj-btn" href="https://github.com/d1stadeyemi/scrna_GSE148071_project" target="_blank" rel="noopener">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+            <a class="btn proj-btn proj-btn-outline"
+               href="https://doi.org/10.1038/s41467-021-22801-0" target="_blank" rel="noopener">
+              <i class="fas fa-external-link-alt"></i> Source Paper
+            </a>
+          </div>
+        </div>
+
+        <!-- RIGHT: pipeline progress -->
+        <div style="width:260px; flex-shrink:0;">
+          <span class="skill-label" style="margin-bottom:10px; display:block;">Pipeline Progress</span>
+          <div class="scrna-stages">
+            <div class="scrna-stage-row">
+              <div class="scrna-stage-dot done"></div>
+              <span class="scrna-stage-label done">Reproduction plan &amp; repo setup</span>
+              <span class="scrna-stage-tag done">Done</span>
+            </div>
+            <div class="scrna-stage-row">
+              <div class="scrna-stage-dot done"></div>
+              <span class="scrna-stage-label done">GEO data acquisition (GSE148071)</span>
+              <span class="scrna-stage-tag done">Done</span>
+            </div>
+            <div class="scrna-stage-row">
+              <div class="scrna-stage-dot active"></div>
+              <span class="scrna-stage-label active">Data parsing &amp; AnnData construction</span>
+              <span class="scrna-stage-tag active">Active</span>
+            </div>
+            <div class="scrna-stage-row">
+              <div class="scrna-stage-dot pending"></div>
+              <span class="scrna-stage-label pending">QC, normalisation &amp; HVG selection</span>
+              <span class="scrna-stage-tag pending">Pending</span>
+            </div>
+            <div class="scrna-stage-row">
+              <div class="scrna-stage-dot pending"></div>
+              <span class="scrna-stage-label pending">PCA · UMAP · Leiden clustering</span>
+              <span class="scrna-stage-tag pending">Pending</span>
+            </div>
+            <div class="scrna-stage-row">
+              <div class="scrna-stage-dot pending"></div>
+              <span class="scrna-stage-label pending">Cell type annotation</span>
+              <span class="scrna-stage-tag pending">Pending</span>
+            </div>
+            <div class="scrna-stage-row">
+              <div class="scrna-stage-dot pending"></div>
+              <span class="scrna-stage-label pending">CNV inference (infercnvpy)</span>
+              <span class="scrna-stage-tag pending">Pending</span>
+            </div>
+            <div class="scrna-stage-row">
+              <div class="scrna-stage-dot pending"></div>
+              <span class="scrna-stage-label pending">Subpopulation &amp; TME analysis</span>
+              <span class="scrna-stage-tag pending">Pending</span>
+            </div>
+            <div class="scrna-stage-row">
+              <div class="scrna-stage-dot pending"></div>
+              <span class="scrna-stage-label pending">Trajectory &amp; cell-cell interactions</span>
+              <span class="scrna-stage-tag pending">Pending</span>
+            </div>
+          </div>
+
+          <div style="margin-top:14px; padding:10px 12px; background:var(--teal-light);
+                      border-radius:8px; border:1px solid #a5e0ef;">
+            <p style="font-size:0.75rem; color:var(--teal-dark); margin:0; font-weight:600; line-height:1.5;">
+              <i class="fas fa-info-circle"></i>&nbsp;
+              Scanpy reimplementation of the original Seurat workflow.
+              Biological concordance — not numerical identity — is the target.
+            </p>
+          </div>
+        </div>
+
+      </div>
     </div>
   </div>
 
   <!-- ══════════════════════════════════════════
-       COMPLETED PROJECTS
+       IN PROGRESS — ORNL ML
   ══════════════════════════════════════════ -->
-  <h2 class="proj-section-heading" style="margin-top:12px;"><i class="fas fa-check-circle"></i> Completed Projects</h2>
-
-  <!-- TWO MAIN PROJECTS SIDE BY SIDE -->
-  <div class="proj-main-grid">
-
-  <!-- ══ PROJECT 1 — SIWA ══ -->
-  <div class="proj-card featured">
-    <div class="proj-img-wrap">
-      <img src="https://www.surfertoday.com/images/stories/oasis-in-desert.jpg"
-           alt="Metagenomics pipeline"
-           onerror="this.src='https://images.unsplash.com/photo-1576086213369-97a306d36557?w=800&q=80'">
-      <span class="proj-featured-badge"><i class="fas fa-star"></i> Featured</span>
-    </div>
-    <div class="proj-body">
-      <div class="proj-tags-row">
-        <span class="proj-tag teal">Metagenomics</span>
-        <span class="proj-tag navy">BGC Discovery</span>
-        <span class="proj-tag green">Drug Discovery</span>
-        <span class="proj-tag orange">HPC · SLURM</span>
-      </div>
-      <h2 class="proj-title">Siwa Oasis Microbiome: End-to-End Metagenomic Pipeline</h2>
-      <p class="proj-subtitle">
-        From raw sequencing reads to biosynthetic gene cluster discovery — a fully automated,
-        three-stage pipeline characterising the microbial communities of Egypt's historically
-        therapeutic Cleopatra and Fatnas springs.
-      </p>
-      <div class="proj-metrics">
-        <div class="proj-metric"><span class="pm-val">&gt;1 TB</span><span class="pm-lbl">Data processed</span></div>
-        <div class="proj-metric"><span class="pm-val">37</span><span class="pm-lbl">MAGs reconstructed</span></div>
-        <div class="proj-metric"><span class="pm-val">320+</span><span class="pm-lbl">BGCs identified</span></div>
-        <div class="proj-metric"><span class="pm-val">15</span><span class="pm-lbl">Novel species</span></div>
-      </div>
-      <div class="proj-pipeline">
-        <div class="pipe-step">
-          <div class="pipe-icon" style="background:linear-gradient(135deg,#0891b2,#0f2a5e);">
-            <i class="fas fa-filter"></i>
-          </div>
-          <div>
-            <span class="pipe-label">Stage 1</span>
-            <span class="pipe-name">QC &amp; Profiling</span>
-            <span class="pipe-tools">fastp · Kraken2 · Bracken</span>
-          </div>
-        </div>
-        <div class="pipe-arrow"><i class="fas fa-chevron-right"></i></div>
-        <div class="pipe-step">
-          <div class="pipe-icon" style="background:linear-gradient(135deg,#059669,#0891b2);">
-            <i class="fas fa-layer-group"></i>
-          </div>
-          <div>
-            <span class="pipe-label">Stage 2</span>
-            <span class="pipe-name">Assembly &amp; MAGs</span>
-            <span class="pipe-tools">MEGAHIT · MetaWRAP · GTDB-Tk</span>
-          </div>
-        </div>
-        <div class="pipe-arrow"><i class="fas fa-chevron-right"></i></div>
-        <div class="pipe-step">
-          <div class="pipe-icon" style="background:linear-gradient(135deg,#d97706,#ea580c);">
-            <i class="fas fa-dna"></i>
-          </div>
-          <div>
-            <span class="pipe-label">Stage 3</span>
-            <span class="pipe-name">BGC Discovery</span>
-            <span class="pipe-tools">antiSMASH · BiG-MAP · DeepBGC</span>
-          </div>
+  <h2 class="proj-section-heading" style="margin-top:12px;"><i class="fas fa-code-branch"></i> In Progress</h2>
+  <div class="proj-inprogress-grid" style="grid-template-columns:1fr;">
+    <div class="proj-ip-card">
+      <div class="proj-ip-img">
+        <img src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80"
+             alt="Machine learning genomics"
+             onerror="this.parentElement.style.background='var(--teal-light)'">
+        <div class="proj-ip-overlay">
+          <span class="proj-ip-badge"><i class="fas fa-spinner fa-spin"></i> In Progress</span>
         </div>
       </div>
-      <div class="proj-actions">
-        <a class="btn proj-btn" href="https://github.com/d1stadeyemi/BGC_analysis" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i> View on GitHub
-        </a>
-        <a class="btn proj-btn proj-btn-outline" href="publications.html">
-          <i class="fas fa-book-open"></i> Related Publication
-        </a>
+      <div class="proj-ip-body">
+        <div class="proj-tags-row">
+          <span class="proj-tag orange">Machine Learning</span>
+          <span class="proj-tag green">ORNL</span>
+          <span class="proj-tag navy">Random Forest</span>
+        </div>
+        <h3>ML Models for Microbial Growth Prediction</h3>
+        <p>Random Forest models predicting microbial growth from engineered phenotype features,
+           targeting 20–30% error reduction over baseline. Ongoing at Oak Ridge National Laboratory.
+           Code is private — work is under active development.</p>
       </div>
     </div>
   </div>
-
-  <!-- ══ PROJECT 2 — MICROARRAY ══ -->
-  <div class="proj-card">
-    <div class="proj-img-wrap proj-img-short">
-      <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80"
-           alt="Differential gene expression"
-           onerror="this.src='https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800&q=80'">
-    </div>
-    <div class="proj-body">
-      <div class="proj-tags-row">
-        <span class="proj-tag teal">Transcriptomics</span>
-        <span class="proj-tag navy">Microarray</span>
-        <span class="proj-tag green">R · limma</span>
-      </div>
-      <h2 class="proj-title">Microarray Differential Gene Expression Analysis</h2>
-      <p class="proj-subtitle">
-        Complete DEG workflow on GSE47960 (Mitchell et al., 2013), from raw microarray data
-        through normalisation and statistical testing to publication-quality visualisation.
-      </p>
-      <div class="proj-outputs">
-        <span class="proj-output-item"><i class="fas fa-chart-bar"></i> Volcano plots</span>
-        <span class="proj-output-item"><i class="fas fa-circle-nodes"></i> Venn diagrams</span>
-        <span class="proj-output-item"><i class="fas fa-table"></i> DEG tables (CSV/TSV)</span>
-        <span class="proj-output-item"><i class="fas fa-chart-line"></i> QC plots</span>
-      </div>
-      <div class="proj-actions">
-        <a class="btn proj-btn" href="https://github.com/d1stadeyemi/Microarray_analysis" target="_blank" rel="noopener">
-          <i class="fab fa-github"></i> View on GitHub
-        </a>
-      </div>
-    </div>
-  </div>
-
-  </div><!-- end proj-main-grid -->
 
 </div>
 

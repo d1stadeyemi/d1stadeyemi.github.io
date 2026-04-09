@@ -40,7 +40,7 @@
 }
 
 /* ===== BASE ===== */
-html { scroll-behavior: smooth; font-size: 19px; }
+html { scroll-behavior: smooth; font-size: 17px; }
 
 body {
   font-family: var(--font-body);
@@ -112,7 +112,7 @@ body {
 /* ===== PAGE WRAPPER ===== */
 .page-wrapper {
   flex: 1;
-  padding: 48px 9.5%;
+  padding: 48px 1.5%;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -159,9 +159,9 @@ body {
 /* ===== HOME MAIN LAYOUT ===== */
 .main-container {
   display: flex;
-  gap: 40px;
+  gap: 52px;
   align-items: flex-start;
-  padding: 48px 9.5%;
+  padding: 48px 1.5%;
   max-width: 1280px;
   width: 100%;
   margin: 0 auto;
@@ -248,8 +248,8 @@ body {
 }
 
 .social-icons a {
-  width: 48px;
-  height: 48px;
+  width: 46px;
+  height: 46px;
   border-radius: 12px;
   background: var(--bg-white);
   border: 1px solid var(--border);
@@ -258,7 +258,7 @@ body {
   align-items: center;
   justify-content: center;
   color: var(--text-muted);
-  font-size: 2.2rem;
+  font-size: 1.3rem;
   text-decoration: none;
   transition: var(--transition);
 }
@@ -2356,4 +2356,83 @@ footer a {
     padding: 20px;
   }
   .fun-card-reverse .fun-right { border-right: none; }
+}
+
+/* ===== SCRNA PROGRESS STAGES ===== */
+.scrna-stages {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 14px 0;
+}
+
+.scrna-stage-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.scrna-stage-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.scrna-stage-dot.done    { background: var(--green); }
+.scrna-stage-dot.active  { background: var(--teal); box-shadow: 0 0 0 3px rgba(8,145,178,0.2); }
+.scrna-stage-dot.pending { background: var(--border); border: 2px solid var(--text-light); }
+
+.scrna-stage-label {
+  font-size: 0.78rem;
+  color: var(--text-body);
+  font-weight: 500;
+  flex: 1;
+}
+
+.scrna-stage-label.done   { color: var(--green);     font-weight: 600; }
+.scrna-stage-label.active { color: var(--teal-dark); font-weight: 600; }
+.scrna-stage-label.pending{ color: var(--text-muted);}
+
+.scrna-stage-tag {
+  font-size: 0.62rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 1px 7px;
+  border-radius: 4px;
+}
+
+.scrna-stage-tag.done    { background: var(--green-light); color: var(--green);    border: 1px solid #6ee7b7; }
+.scrna-stage-tag.active  { background: var(--teal-light);  color: var(--teal-dark);border: 1px solid #a5e0ef; }
+.scrna-stage-tag.pending { background: var(--bg-page);     color: var(--text-muted);border: 1px solid var(--border); }
+
+.scrna-learning {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+.scrna-learning span {
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--navy);
+  background: #e8eef8;
+  border: 1px solid var(--border-accent);
+  border-radius: 5px;
+  padding: 2px 9px;
+}
+
+/* ── ACTIVE PROJECT CARD ── */
+.proj-card-active {
+  border-color: var(--green);
+  border-width: 2px;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
 }
