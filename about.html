@@ -25,7 +25,13 @@
   <div class="nav-right">
     <a href="index.html">Home</a>
     <a href="about.html" class="active">About</a>
-    <a href="project.html">Projects</a>
+    <a href="project.html"
+       onclick="gtag('event', 'navigation_click', {
+       event_category: 'navigation',
+       event_label: 'Projects Page'
+      });">
+      Projects
+    </a>
     <a href="publications.html">Publications</a>
     <a href="awards.html">Awards</a>
     <a href="blog.html">Blog</a>
